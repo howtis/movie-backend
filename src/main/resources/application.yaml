@@ -1,0 +1,25 @@
+# Spring Datasource Configuration
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${database_url}
+    username: ${database_username}
+    password: ${database_password}
+
+  # Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+# MyBatis Configuration
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.howtis.movie
+
+#TMDB api token
+tmdb:
+  api-key: ${tmdb_api_key}
+  api-access-token: ${tmdb_api_access_token}
