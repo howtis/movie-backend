@@ -1,11 +1,11 @@
 name: Create and publish a Docker image
 
 on:
-  push:
-    branches:
-    - master
-    - 'release/**'
-
+  workflow_dispatch:
+    inputs:
+      package_name:
+        description: 'Package name'
+        required: true
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
