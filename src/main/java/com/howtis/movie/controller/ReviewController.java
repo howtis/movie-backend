@@ -1,6 +1,6 @@
 package com.howtis.movie.controller;
 
-import com.howtis.movie.domain.Review;
+import com.howtis.movie.domain.entity.Review;
 import com.howtis.movie.mapper.ReviewMapper;
 import com.howtis.movie.repository.ReviewRepository;
 import lombok.RequiredArgsConstructor;

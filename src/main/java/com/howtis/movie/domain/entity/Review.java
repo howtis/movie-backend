@@ -1,4 +1,4 @@
-package com.howtis.movie.domain;
+package com.howtis.movie.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;

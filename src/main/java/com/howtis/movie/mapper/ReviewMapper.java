@@ -1,6 +1,6 @@
 package com.howtis.movie.mapper;
 
-import com.howtis.movie.domain.Review;
+import com.howtis.movie.domain.entity.Review;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
