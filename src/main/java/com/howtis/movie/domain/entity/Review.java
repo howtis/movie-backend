@@ -27,6 +27,9 @@ public class Review {
     @JsonProperty("created_at")
     private Date createdAt;
 
+    @Transient
+    private String token; // reCaptcha token
+
     @Builder
     public Review(Long id, String movieId, Short rating, String comment, Date createdAt) {
         this.id = id;
