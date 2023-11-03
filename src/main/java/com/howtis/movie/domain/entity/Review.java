@@ -11,7 +11,7 @@ import java.util.Date;
 @Table(name = "review")
 @Entity
 @ToString
-public class Review {
+public class Review { // TODO JPA entity와 DTO 분리 필요
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,6 +29,9 @@ public class Review {
 
     @Transient
     private String token; // reCaptcha token
+
+    @Transient
+    private Short averageRating;
 
     @Builder
     public Review(Long id, String movieId, Short rating, String comment, Date createdAt) {
